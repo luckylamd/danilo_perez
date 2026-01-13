@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Smartphone, Layers, Network } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -54,52 +54,36 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Network,
-      title: "AI Engineer",
-      company: "EVU Inc.",
-      period: " June 2025 - Present",
+      icon: Smartphone,
+      title: "Mobile App Developer",
+      company: "Codevico",
+      period: "10/2021 - 04/2024",
       description:
-        "Led AI initiatives at EVU, a SaaS incubator with 250+ members. Built and deployed NLP and deep learning models (TensorFlow, PyTorch, Hugging Face) for chatbots and recommendation engines. Developed AI agents with LangChain and RAG pipelines using FAISS and Pinecone. Set up MLOps workflows with Docker and CI/CD. Managed cross-functional teams (web, mobile, cloud) and ensured scalable, secure system integration.",
+        "Developed mobile applications for iOS and Android using Swift, Java, and Kotlin. Built apps that prevent resources from becoming waste with dual-mode functionality (User and Driver). Developed backend APIs and admin panels using Node.js with React, Angular, and PHP. Created fitness apps with advanced features including personalized coaching, workout reminders, and progress tracking. Collaborated with cross-functional teams including designers and testers to achieve project goals.",
     },
     {
-      icon: Layers,
-      title: "Chief Technology Officer",
-      company: "Video FX Box",
-      period: "June 2025 - Present",
+      icon: Smartphone,
+      title: "Junior Mobile Developer",
+      company: "CPS innovations",
+      period: "04/2019 - 09/2021",
       description:
-        "Co-founder & CTO at VFXB, an AI-powered platform for fast, cost-effective video creation and editing. Led development of tools that enable users to generate professional-quality videos using AI, streamlining traditional production workflows. Focused on reducing complexity through intelligent automation, real-time editing, and scalable infrastructure.",
-    },
-    {
-      icon: Code2,
-      title: " Chief Engineer & Founder",
-      company: "Softoryze",
-      period: "2017 - Present",
-      description:
-        "Founder & Chief Engineer at Softoryze, a New York-based software development company serving clients worldwide. Leading end-to-end software solutions across web, mobile, and cloud platforms. Overseeing architecture, engineering, and global project delivery with a focus on scalability, performance, and innovation.",
+        "Built a seamless and technically impressive platform for esports enthusiasts. Developed an in-game tracker that monitors progress and performance, recording progress toward objectives and detailed performance metrics. Implemented Player Performance tracker and Player Evaluation reports. Created features for referees including Referee reports and Referee assignment tracker. Built Field Assignment Notification feature for tournament organizers.",
     },
     {
       icon: Code2,
-      title: " AI & Automation Developer",
-      company: "DhakaPost.com",
-      period: "January 2024 - Jun 2025 ",
+      title: "Full Stack Developer",
+      company: "SaltStack For DevOps",
+      period: "08/2017 - 03/2019",
       description:
-        "Designed and built BanglaShorts for Dhaka Post—an AI-powered micro-news platform summarizing Bangladeshi news into 59-word stories. Used BanglaBERT and mT5 for summarization, Sentence Transformers for duplicate detection, and automated image generation with Pillow/OpenCV. Integrated Facebook & Instagram APIs for automated, scheduled social media publishing.",
+        "Spearheaded the creation of scalable web applications using good JavaScript frameworks like React, Angular, and Vue.js. Designed and applied robust RESTful APIs and microservices with Node.js and Express.js. Optimized front-end performance and ensured cross-device compatibility using HTML5, CSS3, and Bootstrap. Managed cloud infrastructure and CI/CD pipelines with AWS, Docker, and Kubernetes. Administered MongoDB, PostgreSQL, and MySQL databases. Conducted code reviews and provided mentorship to junior developers.",
     },
     {
-      icon: Network,
-      title: "Lead Chatbot Developer ",
-      company: "USAID",
-      period: "January 2024 - December 2024 ",
+      icon: Code2,
+      title: "Web Developer",
+      company: "Juvo",
+      period: "07/2015 - 07/2017",
       description:
-        "Designed BanglaGPT, a generative AI chatbot for USAID's Breakthrough ACTION project, supporting call center agents with health-related queries. Built with Bangla-optimized NLP models to enhance accessibility and response accuracy.",
-    },
-    {
-      icon: Layers,
-      title: "Software Engineer",
-      company: "RootsupTech",
-      period: " April 2021 - December 2023",
-      description:
-        "Spearheaded multilingual LLM chatbot development, ensuring inclusive and accurate responses across languages. Built ChatGPT-style context retention and optimized data pipelines for efficient model retraining and versioning.",
+        "Developed and maintained robust web applications using JavaScript, HTML5, CSS3, and PHP Laravel. Managed WordPress sites, customizing themes and plugins to meet client needs. Integrated APIs and third-party services for enhanced functionality. Ensured website security, performance, and scalability through regular updates. Collaborated with design and product teams to deliver user-centric solutions. Led migration of legacy systems to modern web technologies, improving efficiency.",
     },
   ];
 
