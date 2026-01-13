@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import { Smartphone, Code, Link } from "lucide-react";
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -42,26 +43,27 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Artificial Intelligence Engineer",
-    "Machine Learning Engineer",
-    "Full-Stack Engineer",
-    "Linux & GitHub for DevOps Enthusiast",
+    "Mobile Developer",
+    "Full Stack Developer",
+    "iOS & Android Developer",
+    "Blockchain Developer",
   ];
 
   const [code] = useState(`
 class Profile:
     def __init__(self):
-        self.name = "Md Zubayer Hossain Patowari"
-        self.title = "AI Engineer | ML Engineer | Full-Stack Developer"
+        self.name = "Danilo Operez"
+        self.title = "Mobile Developer | Full Stack Developer"
         self.skills = [
-            "Python", "TensorFlow", "PyTorch", "React.js", "FastAPI", "Flask", "NLP",
-            "Hugging Face", "MongoDB", "MySQL", "Docker", "AWS", "Git", "LangChain",
-            "Scikit-learn", "OpenCV", "Keras", "JavaScript", "TypeScript"
+            "Swift", "Kotlin", "Java", "React Native", "Flutter", "Python", "Go", 
+            "React", "Angular", "Vue", "Node.js", "TypeScript", "GraphQL", "C#", 
+            "MongoDB", "DynamoDB", "Redis", "Solidity", "Solana", "AWS", "Docker", 
+            "Kubernetes", "JavaScript", "HTML5", "CSS3"
         ]
         self.hard_worker = True
         self.quick_learner = True
         self.problem_solver = True
-        self.years_of_experience = 4
+        self.years_of_experience = 9
 
     def is_hireable(self):
         return (
@@ -198,7 +200,7 @@ if __name__ == "__main__":
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Zubayer Patowari
+                      Danilo Pérez
                     </span>
                   </span>
                 </h1>
@@ -219,7 +221,7 @@ if __name__ == "__main__":
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  AI Engineer | Machine Learning Engineer | Full-Stack Developer
+                Mobile Developer | Full Stack Developer | iOS & Android Specialist
                   and coding the future 💻✨
                 </p>
               </div>
@@ -255,18 +257,21 @@ if __name__ == "__main__":
 
               {/* Floating badges */}
               <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
-                <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Computer Vision
+                <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400 flex items-center gap-2">
+                  <Smartphone className="w-4 h-4" />
+                  <span>iOS & Android</span>
                 </div>
               </div>
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
-                <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400">
-                  <i className="fas fa-code"></i>&nbsp;&nbsp;Generative AI
+                <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400 flex items-center gap-2">
+                  <Code className="w-4 h-4" />
+                  <span>React Native</span>
                 </div>
               </div>
               <div className="hidden lg:block absolute top-[17rem] left-[70%] transform -translate-x-1/2 animate-float">
-                <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400">
-                  <i className="fas fa-lightbulb"></i>&nbsp;&nbsp;Deep Learning
+                <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400 flex items-center gap-2">
+                  <Link className="w-4 h-4" />
+                  <span>Blockchain</span>
                 </div>
               </div>
             </div>
@@ -281,7 +286,7 @@ if __name__ == "__main__":
                     <div className="window-dot bg-green-500"></div>
                     <span className="ml-2 text-sm text-gray-400 flex items-center gap-2">
                       <i className="fas fa-code"></i>
-                      ai_engineer.py
+                      mobile_developer.py
                     </span>
                   </div>
                   <pre className="language-javascript">
