@@ -29,7 +29,6 @@ const slugs = [
   "go",
   "wordpress",
   "graphql",
-  "amazonaws", // aws
   "heroku",
   "firebase",
   "docker",
