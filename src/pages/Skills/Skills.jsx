@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import { Code2, Database, Cpu, Cloud, Smartphone, Link } from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
@@ -10,8 +10,8 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
-  FaFigma,
   FaAws,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -21,15 +21,22 @@ import {
   SiMongodb,
   SiGraphql,
   SiJest,
-  SiWebpack,
   SiRedux,
   SiFirebase,
-  SiVercel,
-  SiVite,
+  SiSwift,
+  SiKotlin,
+  SiFlutter,
+  SiSolana,
+  SiSolidity,
+  SiEthereum,
+  SiSass,
+  SiMysql,
+  SiRedis,
+  SiHeroku,
+  SiWordpress,
+  SiJira,
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
-import { MdAnimation } from "react-icons/md";
 import { FcWorkflow } from "react-icons/fc";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
@@ -67,6 +74,20 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 const SkillsSection = () => {
   const skillCategories = [
     {
+      icon: Smartphone,
+      title: "Mobile Development",
+      color: "text-cyan-400",
+      skills: [
+        { name: "Swift", icon: <SiSwift className="w-4 h-4 text-[#FA7343]" /> },
+        { name: "Kotlin", icon: <SiKotlin className="w-4 h-4 text-[#7F52FF]" /> },
+        { name: "Java", icon: <FaJava className="w-4 h-4 text-[#ED8B00]" /> },
+        { name: "React Native", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
+        { name: "Flutter", icon: <SiFlutter className="w-4 h-4 text-[#02569B]" /> },
+        { name: "iOS", icon: <Smartphone className="w-4 h-4 text-[#000000]" /> },
+        { name: "Android", icon: <Smartphone className="w-4 h-4 text-[#3DDC84]" /> },
+      ],
+    },
+    {
       icon: Code2,
       title: "Frontend Development",
       color: "text-blue-400",
@@ -85,12 +106,20 @@ const SkillsSection = () => {
           icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
         },
         {
+          name: "SCSS",
+          icon: <SiSass className="w-4 h-4 text-[#CC6699]" />,
+        },
+        {
           name: "HTML5",
           icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
         },
         {
           name: "CSS3",
           icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
+        },
+        {
+          name: "WordPress",
+          icon: <SiWordpress className="w-4 h-4 text-[#21759B]" />,
         },
       ],
     },
@@ -112,8 +141,16 @@ const SkillsSection = () => {
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
         },
         {
+          name: "MySQL",
+          icon: <SiMysql className="w-4 h-4 text-[#4479A1]" />,
+        },
+        {
           name: "MongoDB",
           icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
+        },
+        {
+          name: "Redis",
+          icon: <SiRedis className="w-4 h-4 text-[#DC382D]" />,
         },
         {
           name: "REST APIs",
@@ -126,23 +163,14 @@ const SkillsSection = () => {
       ],
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
+      icon: Link,
+      title: "Blockchain Development",
       color: "text-purple-400",
       skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
-        },
+        { name: "Solidity", icon: <SiSolidity className="w-4 h-4 text-[#627EEA]" /> },
+        { name: "Solana", icon: <SiSolana className="w-4 h-4 text-[#9945FF]" /> },
+        { name: "EVM", icon: <SiEthereum className="w-4 h-4 text-[#627EEA]" /> },
+        { name: "NFT", icon: <Link className="w-4 h-4 text-[#FF6B6B]" /> },
       ],
     },
     {
@@ -151,6 +179,10 @@ const SkillsSection = () => {
       color: "text-orange-400",
       skills: [
         { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
+        {
+          name: "Heroku",
+          icon: <SiHeroku className="w-4 h-4 text-[#430098]" />,
+        },
         {
           name: "Docker",
           icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
@@ -169,44 +201,15 @@ const SkillsSection = () => {
       title: "Tools & Technologies",
       color: "text-pink-400",
       skills: [
-        {
-          name: "VS Code",
-          icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
-        },
         { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
-        {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
-        },
         { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
         {
           name: "Firebase",
           icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
         },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-      ],
-    },
-    {
-      icon: Paintbrush,
-      title: "Creative Skills",
-      color: "text-yellow-400",
-      skills: [
         {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
+          name: "Jira",
+          icon: <SiJira className="w-4 h-4 text-[#0052CC]" />,
         },
       ],
     },

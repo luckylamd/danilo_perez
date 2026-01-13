@@ -10,7 +10,6 @@ export default function About() {
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
-                  // src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1207&h=929&fit=crop&auto=format"
                   src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
                   className="rounded-[15px] shadow block w-full h-full object-cover"
                   alt="Mobile developer working"
