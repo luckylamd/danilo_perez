@@ -21,7 +21,7 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Danilo Operez, a passionate Mobile Developer and Full Stack Developer
+                Hello! I'm Danilo Pérez, a passionate Mobile Developer and Full Stack Developer
                 specializing in building cross-platform mobile applications and scalable web solutions
                 across esports, fitness, and resource management platforms. I have extensive professional experience working with
                 innovative companies such as{" "}
