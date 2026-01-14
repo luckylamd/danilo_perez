@@ -5,55 +5,14 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "A comprehensive system for automatically grading Hebrew handwritten mathematics homework",
+    title: "EWG's Healthy Living",
     description:
-      "An intelligent web application that uses the Google Gemini API to automatically grade handwritten Hebrew math homework. Users can upload an image or a PDF of their work and receive a detailed, problem-by-problem analysis with error highlighting and constructive feedback.",
-    src: "rock.jpg",
-    link: "https://uploads.onecompiler.io/42uvjq4qp/43tsuzzzw/477093873-d1ace9cc-e704-4892-841c-280aa67ad02e.jpg",
+      "EWG's Healthy Living is a mobile application that helps users to stay healthy and fit. It is a platform that provides a variety of tools and resources to help users achieve their fitness goals.",
+    src: "https://res.cloudinary.com/dnhvsfxor/image/upload/v1768407824/ewgs_healthy_living_jn8xu4.png",
     color: "#5196fd",
-    githubLink: "https://github.com/patowari/hebrew-math-grader",
-    liveLink: "#",
-  },
-  {
-    title: "Designed and developed BanglaGPT, a generative AI-powered Bangla chatbot built under USAID's Breakthrough ACTION project to support call center agents in responding to health-related queries.",
-    description:
-      "Focused on improving the efficiency of health communication through AI-driven support tools tailored for the needs of the DGFP (Directorate General of Family Planning) call center. ",
-    src: "water.jpg",
-    link: "https://uploads.onecompiler.io/42uvjq4qp/43tsuzzzw/Screenshot%202025-08-15%20130043.png",
-    color: "#fff",
-    githubLink: "https://github.com/patowari/BanglaGPT",
-    liveLink: "https://breakthrough-action.netlify.app/",
-  },
-  {
-    title: "AI micro-news platform for Dhaka Post, creating 59-word summaries.",
-    description:
-      "Built a web scraper for top Bangladeshi news portals. Used BanglaBERT and mT5 for AI-generated short news summaries. Implemented duplicate detection with Sentence Transformers and cosine similarity. Automated image creation with Python (Pillow, OpenCV) on dynamic templates. Integrated Facebook & Instagram APIs for automated posting with captions and scheduling.",
-    src: "tree.jpg",
-    link: "https://uploads.onecompiler.io/42uvjq4qp/43tsuzzzw/Screenshot%202025-08-15%20124915.png",
-    color: "#8f89ff",
-    githubLink: "https://github.com/patowari/Banglashorts-backend",
-    liveLink: "https://banglashorts.com",
-  },
-  {
-    title: "AI-powered Flask tool for Nasle that removes and replaces image backgrounds with custom designs.",
-    description:
-      "A Flask web application that automatically removes backgrounds from uploaded images and replaces them with your custom background collection. ",
-    src: "water.jpg",
-    link: "https://uploads.onecompiler.io/42uvjq4qp/43tsuzzzw/463458014-5176c96e-bb4e-4afb-aa63-eeccc1cc137b.png",
-    color: "#fff",
-    githubLink: "https://github.com/patowari/Background-Replacement-Tool",
-    liveLink: "https://aibooth.xri.com.bd/",
-  },
-  {
-    title: "Production-ready chatbot integrates WhatsApp Cloud API for seamless communication, Groq ( deepseek-r1-distill-llama-70b ) for conversational intelligence, and Redis for context management.",
-    description:
-      "A smart, scalable, and engaging WhatsApp chatbot that provides context-aware responses and can handle real-world conversations.",
-    src: "house.jpg",
-    link: "https://uploads.onecompiler.io/42uvjq4qp/43tsuzzzw/Untssitled.jpg",
-    color: "#ed649e",
-    githubLink: "https://github.com/patowari/whatsapp-chatbot-groq",
-    liveLink: "#",
-  },
+    githubLink: "https://github.com/luckylamd/EWG-Healthy-Living",
+    liveLink: "https://apps.apple.com/us/app/ewgs-healthy-living/id703155791",
+  }
 ];
 
 export default function Projects() {
@@ -117,7 +76,7 @@ export default function Projects() {
               <Card
                 key={`p_${i}`}
                 i={i}
-                url={project.link}
+                url={project.src}
                 title={project.title}
                 color={project.color}
                 description={project.description}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, MapPin, Star, GitFork, Eye } from 'lucide-react';
+import { ExternalLink, MapPin, Star, GitFork } from 'lucide-react';
 
 const GitHubProfileSection = () => {
   const generateContributionGraph = () => {

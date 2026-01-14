@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   FaHome,
   FaLaptopCode,
-  FaUser,
   FaBriefcase,
-  FaGraduationCap,
   FaCode,
   FaEnvelope,
   FaBars,
