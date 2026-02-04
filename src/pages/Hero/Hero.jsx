@@ -54,10 +54,10 @@ class Profile:
         self.name = "Danilo Pérez"
         self.title = "Mobile Developer | Full Stack Developer"
         self.skills = [
-            "Swift", "Kotlin", "Java", "React Native", "Flutter", "Python", "Go", 
-            "React", "Angular", "Vue", "Node.js", "TypeScript", "GraphQL", "C#", 
-            "MongoDB", "DynamoDB", "Redis", "Solidity", "Solana", "AWS", "Docker", 
-            "Kubernetes", "JavaScript", "HTML5", "CSS3"
+            "HTML5", "CSS3", "JavaScript", "Swift", "Java", "Python", "Go", "TypeScript",
+            "React", "Angular", "Vue", "React Native", "Node.js", "Kotlin", "C#",
+            ".NET", "ASP.NET", "MongoDB", "DynamoDB", "Redis", "Solidity", "Solana",
+            "Kubernetes", "Flutter", "AWS", "Docker", "GraphQL"
         ]
         self.hard_worker = True
         self.quick_learner = True
@@ -170,9 +170,9 @@ if __name__ == "__main__":
             style={{
               paddingTop:
                 window.innerWidth >= 1360 &&
-                window.innerWidth <= 1370 &&
-                window.innerHeight >= 760 &&
-                window.innerHeight <= 775
+                  window.innerWidth <= 1370 &&
+                  window.innerHeight >= 760 &&
+                  window.innerHeight <= 775
                   ? "12rem"
                   : "",
             }}
@@ -220,7 +220,7 @@ if __name__ == "__main__":
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                Mobile Developer | Full Stack Developer | iOS & Android Specialist
+                  Mobile Developer | Full Stack Developer | iOS & Android Specialist
                   and coding the future 💻✨
                 </p>
               </div>
